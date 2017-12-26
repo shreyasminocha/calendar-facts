@@ -1,6 +1,5 @@
 # calendar-facts
 
-[![npm](https://img.shields.io/npm/v/calendar-facts.svg)](//npmjs.com/package/calendar-facts)
 [![Latest release](https://img.shields.io/github/release/shreyasminocha/calendar-facts.svg)](//github.com/shreyasminocha/calendar-facts/releases/latest)
 
 A command line utility to produce (pretty gibberish) calendar facts. Inspired by [xkcd 1930](//xkcd.com/1930).
@@ -17,8 +16,17 @@ npm install -g calendar-facts
 
 ## Usage
 
-```shell
-calendar-facts
+```
+Usage: calendar-facts [options]
+
+Options:
+  -c, --consequence  Show fact with consequence                        [boolean]
+  -h, --help         Show help                                         [boolean]
+  -v, --version      Show version number                               [boolean]
+
+Examples:
+  calendar-facts     Show a random calendar fact
+  calendar-facts -c  Show a random calendar fact with consequence
 ```
 
 ## License

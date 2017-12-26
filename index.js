@@ -1,8 +1,19 @@
 #!/usr/bin/env node
-
 const randomInt = require("random-int");
+const argv = require("yargs")
+    .usage("Usage: $0 [options]")
+    .alias("c", "consequence")
+    .describe("c", "Show fact with consequence")
+    .boolean("c")
+    .alias("v", "version")
+    .help("h")
+    .alias("h", "help")
+    .example("$0", "Show a random calendar fact")
+    .example("$0 -c", "Show a random calendar fact with consequence")
+    .epilogue("Licensed under the MIT license.")
+    .argv;
 
-const evantBank = [
+const eventBank = [
     "the (fall|spring) equinox" ,
     "the (winter|summer) (solstice|Olympics)",
     "the (earliest|latest) (sunrise|sunset)",
@@ -33,6 +44,14 @@ const wildCardBank = [
     "it was even more extreme during the (bronze age|ice age|cretaceous|1990s)",
     "there's a proposal to fix it, but it (will never happen|actually make things worse|is stalled in Congress|might be unconstitutional)",
     "it's getting worse and no one knows why"
+]
+
+const consequenceBank = [
+    "causes huge headache for software developers",
+    "is taken advantage of by high speed traders",
+    "triggered the 2003 Northeast Blackout",
+    "has to be corrected for by GPS satellites",
+    "is now recognized as a major cause of World War 1"
 ]
 
 /**
@@ -68,9 +87,16 @@ function chooseFrom(bank) {
     return simplify(randomElement(bank));
 }
 
-const event = chooseFrom(evantBank);
+const event         = chooseFrom(eventBank);
 const unusualManner = chooseFrom(unusualMannerBank);
-const reason = chooseFrom(reasonBank);
-const wildCard = chooseFrom(wildCardBank);
+const reason        = chooseFrom(reasonBank);
+const wildCard      = chooseFrom(wildCardBank);
+const consequence   = chooseFrom(consequenceBank);
 
-console.log(`Did you know that ${event} ${unusualManner} because of ${reason}? Apparently ${wildCard}.`);
+let fact = `Did you know that ${event} ${unusualManner} because of ${reason}? Apparently ${wildCard}. `
+
+if(argv.c || argv.consequence) {
+    fact += `While it may seem like trivia, it ${consequence}.`
+}
+
+console.log(fact);
