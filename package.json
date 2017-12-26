@@ -1,0 +1,24 @@
+{
+  "name": "calendar-facts",
+  "version": "1.0.0",
+  "description": "xkcd inspired calendar trivia",
+  "main": "index.js",
+  "bin": {
+    "calendar-facts": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyasminocha/calendar-facts.git"
+  },
+  "keywords": [
+    "xkcd",
+    "facts",
+    "trivia",
+    "calendar"
+  ],
+  "author": "Shreyas Minocha",
+  "license": "MIT",
+  "dependencies": {
+    "random-int": "^1.0.0"
+  }
+}
