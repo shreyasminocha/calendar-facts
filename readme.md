@@ -4,8 +4,6 @@
 
 A command line utility to produce (pretty gibberish) calendar facts. Inspired by [xkcd 1930](//xkcd.com/1930).
 
-![Calendar facts](https://imgs.xkcd.com/comics/calendar_facts_2x.png)
-
 ## Installation
 
 Assuming you have [npm installed](//www.npmjs.com/get-npm), run the following in your terminal:
@@ -32,3 +30,5 @@ Examples:
 ## License
 
 Licensed under the [MIT License](//shreyas.mit-license.org/2017).
+
+![Calendar facts](https://imgs.xkcd.com/comics/calendar_facts_2x.png)

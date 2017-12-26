@@ -6,6 +6,12 @@
   "bin": {
     "calendar-facts": "./index.js"
   },
+  "scripts": {
+    "lint": "prettier \"index.js\" --ignore-path ./.prettierignore --write && git add . && git status"
+  },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shreyasminocha/calendar-facts.git"
@@ -21,5 +27,8 @@
   "dependencies": {
     "random-int": "^1.0.0",
     "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.9.2"
   }
 }
