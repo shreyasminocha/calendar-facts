@@ -1,5 +1,5 @@
 {
-  "name": "calendar-facts",
+  "name": "xkcd-calendar-facts",
   "version": "2.0.0",
   "description": "xkcd inspired calendar trivia",
   "main": "index.js",
