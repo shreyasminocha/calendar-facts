@@ -37,7 +37,7 @@ const unusualMannerBank = [
 const reasonBank = [
     "time zone legislation in (Indiana|Arizona|Russia)",
     "a decree by the Pope in th 1500s",
-    "(precession|libration|nutation|libation|eccentricity|obliquity) of the (Moon|Sun|Earth's axis|Equator|Prime meridian|(International Date|Mason-Dixon) line|magnetic field reversal|an arbitrary decision by (Benjamin Franklin|Isaac Newton|FDR))"
+    "the (precession|libration|nutation|libation|eccentricity|obliquity) of the (Moon|Sun|Earth's axis|Equator|Prime meridian|(International Date|Mason-Dixon) line|magnetic field reversal|an arbitrary decision by (Benjamin Franklin|Isaac Newton|FDR))"
 ];
 
 const wildCardBank = [

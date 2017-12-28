@@ -2,7 +2,7 @@
 
 [![Latest release](https://img.shields.io/github/release/shreyasminocha/calendar-facts.svg)](//github.com/shreyasminocha/calendar-facts/releases/latest)
 
-[![npm](https://img.shields.io/npm/v/xkcd-calendar-facts.svg)](//npmjs.com/xkcd-calendar-facts)
+[![npm](https://img.shields.io/npm/v/xkcd-calendar-facts.svg)](//npmjs.com/package/xkcd-calendar-facts)
 
 A command line utility to produce (pretty gibberish) calendar facts. Inspired by [xkcd 1930](//xkcd.com/1930).
 
